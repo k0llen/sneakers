@@ -21,13 +21,13 @@ const swiper = new Swiper('.product-card-swiper', {
 if (document.querySelector('.counter')) {
     const minus = document.querySelector('.counter-minus');
     const plus = document.querySelector('.counter-plus');
-    const input = document.querySelector('.counter-input');
-    let inputValue = parseInt(input.value);
+    const input = document.querySelector('.counter-count');
+    let inputValue = parseInt(input.innerText);
 
     plus.addEventListener('click', (e) => {
         if (inputValue < 9) {
             inputValue++;
-            input.value = inputValue;
+            input.innerText = inputValue;
 
         }
     });
@@ -35,7 +35,7 @@ if (document.querySelector('.counter')) {
     minus.addEventListener('click', (e) => {
         if (inputValue > 1) {
             --inputValue;
-            input.value = inputValue;
+            input.innerText = inputValue;
 
 
         }
@@ -71,7 +71,7 @@ document.addEventListener('click', (event) => {
             imgSrc: document.querySelector('.product-img').getAttribute('src'),
             title: card.querySelector('.product-name').innerText,
             currentPrice: card.querySelector('.current').innerText,
-            count: card.querySelector('.counter-input').value,
+            count: parseInt(card.querySelector('.counter-count').innerText),
         };
 
 
