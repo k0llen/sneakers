@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <title>Document</title>
+
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="wrapper-full">
+            <div class="header__wrapper">
+                <div class="left">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <a href="./index.html" class="logo">
+                        <img src="./img/svg/logo.svg" alt="" srcset="">
+                    </a>
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a href="#!">Collections</a>
+                            </li>
+                            <li>
+                                <a href="#!">Men</a>
+                            </li>
+                            <li>
+                                <a href="#!">Women</a>
+                            </li>
+                            <li>
+                                <a href="#!">About</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <div class="cart-btn" data-action="cart-open">
+                        <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                                fill-rule="nonzero" />
+                        </svg>
+                        <div class="cart-current"></div>
+                    </div>
+                    <div class="cart-modal">
+                        <div class="top">Cart</div>
+                        <div class="cart-list cart--empty">
+                            <div class="empty">Your cart is empty.</div>
+                        </div>
+                        <div class="bottom">
+                            <a href="#!" class="checkout">Checkout</a>
+                        </div>
+                    </div>
+                    <a href="#!" class="cab">
+                        <img src="./img/image-avatar.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="product-card">
+            <div class="wrapper">
+                <div class="product-card-wrapper">
+                    <div class="product__card-left">
+                        <div class="swiper product-card-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide product-card-swiper-slide"><img src="./img/image-product-1.jpg"
+                                        alt="" class="product-img"></div>
+                                <div class="swiper-slide product-card-swiper-slide"><img src="./img/image-product-2.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide product-card-swiper-slide"><img src="./img/image-product-3.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide product-card-swiper-slide"><img src="./img/image-product-4.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-button-prev product-swiper-button-prev">
+                                <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                            </div>
+                            <div class="swiper-button-next product-swiper-button-next">
+                                <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                            </div>
+                        </div>
+                        <div class="swiper product-card-swiper-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/image-product-1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/image-product-2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/image-product-3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/image-product-4.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card-about" data-id="01">
+                        <div class="brand-name">Sneaker Company</div>
+                        <h1 class="product-name">Fall Limited Edition Sneakers</h1>
+                        <div class="product-desc"> These low-profile sneakers are your perfect casual wear companion.
+                            Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+                        </div>
+                        <div class="price">
+                            <div class="top">
+                                <div class="current">$125.00</div>
+                                <div class="sell">50%</div>
+                            </div>
+                            <div class="latest">$250.00</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="counter">
+                                <button class="counter-minus">
+                                    <img src="./img/svg/icon-minus.svg" alt="">
+                                </button>
+                                <input type="text" value="1" disabled class="counter-input">
+                                <button class="counter-plus">
+                                    <img src="./img/svg/icon-plus.svg" alt="">
+                                </button>
+                            </div>
+                            <button class="product-card-cart" data-cart>
+                                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                                        fill-rule="nonzero" />
+                                </svg>
+                                Add to cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="swiper-modal" id="swiper-modal">
+        <div class="swiper modal-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/image-product-1.jpg" alt="" class="product-img"></div>
+                <div class="swiper-slide"><img src="./img/image-product-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/image-product-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/image-product-4.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="swiper-button-prev modal-swiper-button-prev">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="swiper-button-next modal-swiper-button-next">
+            <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="swiper modal-swiper-thumbs">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/image-product-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/image-product-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/image-product-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/image-product-4.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

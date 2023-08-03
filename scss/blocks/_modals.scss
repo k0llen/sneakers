@@ -1,0 +1,96 @@
+.swiper-modal {
+    display: none;
+    background: none;
+    width: 39%;
+    .modal-swiper {
+        box-sizing: border-box;
+        margin-bottom: 32px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .swiper-button {
+        &-next {
+            right: 20px;
+        }
+
+        &-prev {
+            left: 20px;
+        }
+
+        &-next, &-prev {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 50%;
+            background: #FFF;
+            overflow: hidden;
+            top: var(--swiper-navigation-top-offset,38%);
+            cursor: pointer;
+
+            svg {  
+                width: 12px;
+                height: 18px;
+                stroke: #1D2026;
+                transition: .3s all;
+            }
+
+            &::after {
+                display: none;
+            }
+
+            &:hover {
+                svg {
+                    stroke: hsl(26, 100%, 55%);
+                }
+            }
+        }
+    }
+
+    .modal-swiper-thumbs {
+        .swiper-slide {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid transparent;
+            transition: .3s all;
+            cursor: pointer;
+
+            img {
+                transition: .3s all;
+            }
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background: rgba(255,255,255,.5);
+                border: 2px solid transparent;
+                opacity: 0;
+            }
+        }
+
+        .swiper-slide-thumb-active {
+            border-color: hsl(26, 100%, 55%);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: hsl(26, 100%, 55%);
+    transition: .3s all
+    ;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
